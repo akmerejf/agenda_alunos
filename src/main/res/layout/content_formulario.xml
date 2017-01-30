@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content_formulario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp">
+
+            <ImageView
+                android:id="@+id/formulario_foto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/person"
+                android:background="#00A8EC"
+                android:layout_marginTop="50dp"/>
+
+            <Button
+                android:id="@+id/formulario_botao_foto"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/fundo_cam"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"/>
+        </RelativeLayout>
+        <EditText
+            android:hint="Nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_nome"
+            />
+
+        <EditText
+            android:hint="Site"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_site"
+            />
+
+        <EditText
+            android:hint="Telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_phone"
+            />
+
+        <EditText
+            android:hint="Endereço"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_address"
+            />
+
+        <RadioGroup
+            android:id="@+id/formulario_sexo"
+            android:text="Sexo"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <RadioButton
+                android:id="@+id/sexo_masc"
+                android:text="Masculino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <RadioButton
+                android:id="@+id/sexo_fem"
+                android:text="Feminino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/formulario_situacao"
+            android:text="Situação"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <RadioButton
+                android:id="@+id/situacao_ativo"
+                android:text="Ativo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            />
+            <RadioButton
+                android:id="@+id/situacao_inativo"
+                android:text="Inativo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </RadioGroup>
+
+        <DatePicker
+            android:hint="Data de Nascimento"
+            android:id="@+id/formulario_nascimento"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+
+        <Button
+            android:id="@+id/formulario_enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
